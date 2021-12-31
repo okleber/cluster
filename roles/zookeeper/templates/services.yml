@@ -1,0 +1,30 @@
+apiVersion: apps/v1
+kind: Service
+metadata:
+  name: zk-1-service
+spec:
+  selector:
+    app: zk-1-pod
+  ports:
+  - port: 2181
+    name: client
+  - port: 2888
+    name: server
+  - port: 3888
+    name: leader-election
+---
+apiVersion: apps/v1
+kind: Service
+metadata:
+  name: zk-2-service
+spec:
+  selector:
+    app: zk-2-pod
+  ports:
+  - port: 2181
+    name: client
+  - port: 2888
+    name: server
+  - port: 3888
+    name: leader-election
+---

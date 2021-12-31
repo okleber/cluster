@@ -2,7 +2,7 @@
 - hosts: localhost
   remote_user: root
   roles:
-  - docker
+# - docker
   - zookeeper
-  - hdfs-yarn
+# - hdfs-yarn
 

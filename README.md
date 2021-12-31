@@ -58,7 +58,7 @@ By default it is set to your localhost
 
 4. run command below to start to deploy the hadoopol cluster on docker:
 
->ansible-playbook -i inventories/development/hosts hadoop.yml
+>ansible-playbook -i environments/development/inventory/hosts --extra-vars @environments/development/vars/main.yml hadoop.yml
  
 ### Todo
 
@@ -69,9 +69,9 @@ development purpose.
 
 ### Developer
 
-Write to developer @ hadoopol.com and be part of development team.
+Write to me @ kleber.works and be part of development team.
 
-This app was tested using Ansible version 2.9.10 on top of python 3.8.5
+This app was tested using Ansible version 2.12 on top of python 3.9.9
 
 ### Support
 

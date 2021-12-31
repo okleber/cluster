@@ -1,0 +1,16 @@
+---
+docker:
+  base_image: 'docker.io/openjdk:8'
+
+zookeeper:
+  deployment_location: local #aws, gcp, azure, local
+  num_servers: 3
+  version: 3.5.9
+  docker:
+    container:
+      name: zookeeper
+    image:
+      name: zookeeper-3.5.9
+  download_url: 'http://ftp.ps.pl/pub/apache/zookeeper/zookeeper-3.5.9/apache-zookeeper-3.5.9-bin.tar.gz'
+  
+
